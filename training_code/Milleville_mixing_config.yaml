@@ -1,0 +1,20 @@
+# Milleville_config.yaml
+style: "Milleville"
+run_name: "Milleville_mixing"
+metric_log_file: "Milleville_datamixing_results.txt"
+max_real_samples: 190
+num_classes: 5
+batch_size: 25
+target_res: [640, 960]
+learning_rate: 0.0001
+num_epochs: 100
+train_src_dir: "/home/cpowel21/Desktop/synthetic_segmentation/real_datasets/plantclef/converted/plantclef_train_images/"
+train_mask_dir: "/home/cpowel21/Desktop/synthetic_segmentation/real_datasets/plantclef/converted/plantclef_train_masks/"
+validation_src_dir: "/home/cpowel21/Desktop/synthetic_segmentation/real_datasets/plantclef/converted/plantclef_val_images/"
+validation_mask_dir: "/home/cpowel21/Desktop/synthetic_segmentation/real_datasets/plantclef/converted/plantclef_val_masks/"
+test_src_dir: "/home/cpowel21/Desktop/synthetic_segmentation/real_datasets/plantclef/converted/plantclef_test_images/"
+test_mask_dir: "/home/cpowel21/Desktop/synthetic_segmentation/real_datasets/plantclef/converted/plantclef_test_masks/"
+synth_train_src_dir: "/home/cpowel21/Desktop/synthetic_segmentation/synthetic_dataset/synthetic_dataset/"
+synth_train_mask_dir: "/home/cpowel21/Desktop/synthetic_segmentation/synthetic_dataset/synthetic_dataset/"
+real_proportions: [0, 0.2, 0.3, 0.5, 1]
+num_synth_samples: [0, 100, 190, 500, 1000, 5000, 10000]
