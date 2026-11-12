@@ -34,6 +34,11 @@ class_ids = {'other': 0,
 - `Milleville_dataset_conversion.ipynb` — Notebook for converting the Milleville dataset to a harmonized format.
 
 ---
+## /synthesis
+
+Procedural generation pipeline for LaForge10k, provided for transparency. Not packaged for standalone reproduction; see `synthesis/README.md` for a description of the process and its dependencies.
+
+---
 
 ## Validation Datasets
 
