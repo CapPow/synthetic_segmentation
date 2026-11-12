@@ -23,6 +23,7 @@ class_ids = {'other': 0,
 
 ## /training_code
 
+- `run_experiments_mixing_v3.py` — **Current.** Replaces `run_experiments_mixing.py`. Corrects the learning rate scheduler and switches to PyTorch's standard cross-entropy loss for segmentation, yielding results closer to the values reported by Milleville et al. and Hussein et al.
 - `run_experiments_mixing.py` — Evaluates segmentation model performance using various combinations of real and synthetic training data.  
 - `Milleville_mixing_config.yaml` — Example configuration file for an experimental suite.
 
