@@ -1,0 +1,22 @@
+# Hussein_config.yaml
+style: "Hussein"
+run_name: "Hussein_mixing"
+metric_log_file: "Hussein_datamixing_results.txt"
+max_real_samples: 377
+num_classes: 2
+batch_size: 4
+target_res: [640, 960]
+learning_rate: 0.0001
+num_epochs: 50
+train_src_dir: "/scratch/cpowel21/procedural_generation/datasets/Hussein/Hussein_images"
+train_mask_dir: "/scratch/cpowel21/procedural_generation/datasets/Hussein/Hussein_masks"
+validation_src_dir: "/scratch/cpowel21/procedural_generation/datasets/Hussein/Hussein_val_images"
+validation_mask_dir: "/scratch/cpowel21/procedural_generation/datasets/Hussein/Hussein_val_masks"
+test_src_dir: "/scratch/cpowel21/procedural_generation/datasets/Hussein/Hussein_test_images"
+test_mask_dir: "/scratch/cpowel21/procedural_generation/datasets/Hussein/Hussein_test_masks"
+synth_train_src_dir: "/scratch/cpowel21/procedural_generation/datasets/synthetic_dataset"
+synth_train_mask_dir: "/scratch/cpowel21/procedural_generation/datasets/synthetic_dataset"
+synth_val_src_dir: "/scratch/cpowel21/procedural_generation/datasets/synthetic_dataset_val/"
+synth_val_mask_dir: "/scratch/cpowel21/procedural_generation/datasets/synthetic_dataset_val/"
+real_proportions: [1, 0.5, 0.3, 0.2, 0.1, 0.05, 0.01, 0]
+num_synth_samples: [0, 100, 377, 500, 1000, 5000, 10000]
