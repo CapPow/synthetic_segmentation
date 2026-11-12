@@ -1,0 +1,5 @@
+When using this dataset please use the following citation and pay attention to the rights documented in rights.txt:
+Damboise K (2021). Herbier Louis-Marie (QFA) - Collection de bryophytes. Version 2.4. Université Laval. Occurrence dataset https://doi.org/10.5886/gg2gsst5 accessed via GBIF.org on 2021-08-22.
+Utah State University (2021). Intermountain Herbarium (Vascular plants & algae). Occurrence dataset https://doi.org/10.15468/t43wjj accessed via GBIF.org on 2021-08-22.
+Metsger D (2020). Royal Ontario Museum Green Plant Herbarium (TRT). Version 15.4. Royal Ontario Museum. Occurrence dataset https://doi.org/10.5886/g7j6gct1 accessed via GBIF.org on 2021-08-22.
+Langle P (2018). Buffalo Society of Natural Sciences Clinton Herbarium. Buffalo Society of Nature Science. Occurrence dataset https://doi.org/10.15468/ptawck accessed via GBIF.org on 2021-08-22.

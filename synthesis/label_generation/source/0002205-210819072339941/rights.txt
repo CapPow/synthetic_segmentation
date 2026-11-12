@@ -1,0 +1,9 @@
+
+Dataset: Herbier Louis-Marie (QFA) - Collection de bryophytes
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Intermountain Herbarium (Vascular plants & algae)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Royal Ontario Museum Green Plant Herbarium (TRT)
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Dataset: Buffalo Society of Natural Sciences Clinton Herbarium
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/legalcode

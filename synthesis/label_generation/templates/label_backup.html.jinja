@@ -1,0 +1,35 @@
+{% extends "base.html.jinja" %}
+{%- block style %}
+      .container {
+        max-width: 400px;
+        max-height: 300px;
+        padding-top: 10px;
+      }
+    {% import "macro/text.css.jinja" as text %}
+        {{ text.set_font(font_family, font_size) }}
+        {{ text.set_hyphenation(hyphenate) }}
+        {{ text.set_text_align(text_align) }}
+{% endblock style %}
+
+{% block body %}
+   {% if content and content.content_type.__str__() == "ContentType.COMPOSITE"%}
+        <div class="sections" >
+            {% for c in content %}
+                {% set start= "" %}
+                {% set end = "" %}
+                {% if c.content_type.bold%}
+                    {%set start = start + '<b>' %}
+                    {%set end = '</b>' + end  %}
+                {% elif c.content_type.italic %}
+                    {%set start = start + '<i>' %}
+                    {%set end = '</i>' + end %}
+                {% endif %}
+                <p> {{start}{ c } {end}} </p>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div>
+            No content loaded or content is not an instance of CompositeContent Class
+        </div>
+    {% endif %}
+{% endblock body %}

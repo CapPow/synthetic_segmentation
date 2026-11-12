@@ -1,0 +1,32 @@
+{% extends "base.html.jinja" %}
+{%- block style %}
+    {% import "macro/dimension.css.jinja" as dimension %}
+        {{ dimension.set_page_dimension(width, height, margin) }}
+    {% import "macro/text.css.jinja" as text %}
+        {{ text.set_font(font_family, font_size) }}
+        {{ text.set_hyphenation(hyphenate) }}
+        {{ text.set_text_align(text_align) }}
+    {%- include "label.css.jinja" with context %}
+{% endblock style %}
+
+{% block body %}
+   {% if content and content.content_type.__str__() == "ContentType.COMPOSITE"%}
+        {% for c in content %}
+            {% if c.content_type.__str__() == "ContentType.TITLE"%}
+                <div class="section-title" >
+                <p> {{ c }} </p>
+                </div>
+            {% elif c.content_type.__str__() == "ContentType.PARAGRAPH" %}
+                <div class="sections" >
+                <p> {{ c }} </p>
+                </div>
+            {% else %}
+                <p> Unsupported Content Type: {{c.content_type.__str__()}} </p>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <div>
+            No content loaded or content is not an instance of CompositeContent Class
+        </div>
+    {% endif %}
+{% endblock body %}
