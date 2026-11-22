@@ -56,6 +56,7 @@ python plot_results.py Milleville_mixing_results.txt
 python plot_results.py Hussein_datamixing_results.txt
 # single metric:
 python plot_results.py Milleville_mixing_results.txt -m test_miou
+```
 
 ---
 
