@@ -41,6 +41,24 @@ Procedural generation pipeline for LaForge10k, provided for transparency. Not pa
 
 ---
 
+## /results
+
+Evaluation figures and reproducible plotting pipeline. Contains training log outputs (`.txt`), the plotting script, and generated heatmaps.
+
+- `plot_results.py` — parses `Model:` lines from training logs and produces one heatmap per test metric (PNG + SVG). Also writes a `results.csv` co-output per experiment.
+- `hussein_mixing/`, `milleville_mixing/` — generated outputs (CSVs, heatmaps)
+
+### Reproducing figures
+
+```bash
+cd results
+python plot_results.py Milleville_mixing_results.txt
+python plot_results.py Hussein_datamixing_results.txt
+# single metric:
+python plot_results.py Milleville_mixing_results.txt -m test_miou
+
+---
+
 ## Validation Datasets
 
 This work would not be possible without the real-world validation datasets. We thank the authors for making their segmentation training data publicly available.
